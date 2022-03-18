@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSGO.RUN</title>
+
+    <!-- Подключаем CSS файл -->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <!-- Подключаем favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- JQUERY -->
+    <script src="script/jquery-3.4.1.js"></script>
+    <!-- JQUERY UI -->
+    <script src="script/jquery-ui.js"></script>
+    <!-- СКРИПТЫ -->
+    <script src="script/script.js"></script>
+    <!-- Подключение иконок FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/ef844c3a38.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="body">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="img/loading.gif" alt="preloader" class="preloader-img">
+    </div>
+
+    <header class="header">
+      <div class="fixed-container">
+        <div class="menu-burger">
+          <div class="hambergerIcon"></div>
+        </div>
+        <a href="#" class="header-logo"></a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item">
+              <a href="index.html" class="header-nav__list-item_link current" id="current">
+                <i class="fas fa-home"></i>
+                <span>Главная</span>
+              </a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="lang/helpru.html" class="header-nav__list-item_link">
+                <i class="fas fa-headset"></i>
+                <span>Поддержка</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__lang-nav">
+          <img src="img/ru.svg" alt="lang ru" class="header__lang-img">
+          <div class="lang-option__container">
+           <ul class="lang-option">
+             <li class="lang-option__item">
+              <a href="lang/indexen.html" class="lang-option__item-link">
+                <img src="img/en.svg" alt="">
+                ENGLISH
+              </a>
+             </li>
+             <li class="lang-option__item">
+              <a href="lang/indexes.html" class="lang-option__item-link">
+                <img src="img/es.svg" alt="">
+                Español
+              </a>
+             </li>
+             <li class="lang-option__item">
+              <a href="lang/indexde.html" class="lang-option__item-link">
+                <img src="img/de.svg" alt="">
+                DEUTSCH
+              </a>
+             </li>
+           </ul>
+          </div>
+        </div>
+        <div class="header-account">
+          <a href="#" class="button-login">
+            <span class="button-login__text">Войти через Telegram</span>
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__fixed-container main__fixed">
+        <div class="main-wrapper">
+          <div class="home-left">
+            <div class="graph-wrapper">
+              <div class="graph-animationbox">
+                <div class="graph-fall"></div>
+                <div class="chart">
+                  <div class="chart-box"></div>
+                  <img src="img/begun-v-2.gif" alt="#" class="fall">
+                  <img src="img/begun-v-1.gif" alt="#" class="runUp">
+                </div>
+                <div class="coefficient-box">
+                  <div class="coefficient-box__body">
+                    <div class="coefficient-count1">
+                      <span>1.</span>
+                      <span>2.</span>
+                      <span>3.</span>
+                      <span>4.</span>
+                      <span>4.</span>
+                    </div>
+                    <div class="coefficient-count2">
+                      <span>0</span>
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span>5</span>
+                      <span>6</span>
+                      <span>7</span>
+                      <span>8</span>
+                      <span>9</span>
+                      <span>0</span>
+                    </div>
+                    <div class="coefficient-count3">
+                      <span>0</span>
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span>5</span>
+                      <span>6</span>
+                      <span>7</span>
+                      <span>8</span>
+                      <span>9</span>
+                      <span>0</span>
+                    </div>
+                    <div class="coefficient-value">
+                      <span>x</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="timer">
+                  <div class="timer__body">
+                    <div class="timer__counter-sec">
+                      <span>9.</span>
+                      <span>8.</span>
+                      <span>7.</span>
+                      <span>6.</span>
+                      <span>5.</span>
+                      <span>4.</span>
+                      <span>3.</span>
+                      <span>2.</span>
+                      <span>1.</span>
+                      <span>0.</span>
+                      <span>0.</span>
+                    </div>
+                    <div class="timer__counter-ms">
+                      <span>9</span>
+                      <span>8</span>
+                      <span>7</span>
+                      <span>6</span>
+                      <span>5</span>
+                      <span>4</span>
+                      <span>3</span>
+                      <span>2</span>
+                      <span>1</span>
+                      <span>0</span>
+                      <span>0</span>
+                    </div>
+                    <div class="timer__counter-value">
+                      <span>s</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="graph-bg">
+                  <div class="graph-bg__count">
+                    <div class="graph-bg__count_coefficient">4.00x</div>
+                    <div class="graph-bg__count_coefficient">3.00x</div>
+                    <div class="graph-bg__count_coefficient">2.00x</div>
+                    <div class="graph-bg__count_coefficient">1.00x</div>
+                  </div>
+                  <div class="graph-bg__grid">
+                    <div class="graph-bg__grid_item"></div>
+                    <div class="graph-bg__grid_item"></div>
+                    <div class="graph-bg__grid_item"></div>
+                    <div class="graph-bg__grid_item"></div>
+                  </div>
+                </div>
+                <div class="graph-border">
+                  <span class="top-line line"></span>
+                  <span class="right-line line"></span>
+                  <span class="bottom-line line"></span>
+                  <span class="left-line line"></span>
+                </div>
+              </div>
+              <div class="graph-labels">
+                <div class="graph-labels__item labels__item1">
+                  <a href="#" class="graph-label">
+                    <span class="ratio-button">2,40x</span>
+                  </a>
+                </div>
+                <div class="graph-labels__item labels__item2">
+                  <a href="#" class="graph-label">
+                    <span class="ratio-button">9.29x</span>
+                  </a>
+                </div>
+                <div class="graph-labels__item labels__item3">
+                  <a href="#" class="graph-label">
+                    <span class="ratio-button">1.18x</span>
+                  </a>
+                </div>
+                <div class="graph-labels__item labels__item4">
+                  <a href="#" class="graph-label">
+                    <span class="ratio-button">5.22x</span>
+                  </a>
+                </div>
+                <div class="graph-labels__item labels__item5 ">
+                  <a href="#" class="graph-label">
+                    <span class="ratio-button">1.06x</span>
+                  </a>
+                </div>
+                <div class="graph-labels__item labels__item6">
+                  <a href="#" class="graph-label">
+                    <span class="ratio-button">29.33x</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cases">
+              <div class="cases-header">
+                <div class="cases-stats">
+                  <div class="cases-stats__row">
+                    Баланс:
+                    <b>0.00</b>
+                    <em>BIP</em>
+                  </div>
+                  <div class="cases-stats__row">
+                    Выбрано:
+                    <b>0.00</b>
+                    <em>BIP</em>
+                  </div>
+                </div>
+                <label class="cases-checkbox">
+                  <input type="checkbox" hidden>
+                  <span></span>
+                  Выбрать все
+                </label>
+              </div>
+              <div class="cases__form-box">
+                <form class="cases__form" action="index.html" method="post">
+                  <input class="cases__form-box_input" type="number" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="text" value="">
+                  <button class="button-select" type="button" name="button">Выбрать</button>
+                  <button class="button-takeoff" type="button" name="button">Снять</button>
+                </form>
+              </div>
+              <div class="cases-list cases-empty">
+                <span class="cases-empty__text">Вы не авторизованы</span>
+              </div>
+              <div class="cases-controls">
+                <button class="btn btn-green" type="button" name="button">Обменять</button>
+                <button class="btn" type="button" name="button">Получить</button>
+              </div>
+            </div>
+          </div>
+          <div class="home-middle">
+            <div class="round-inform">
+              <div class="notice-block notice-block__error">
+                Вы не авторизованы
+                <button class="notice-block__close"></button>
+              </div>
+              <div class="notice-block notice-block__message">
+                Уважаемые пользователи, пополнение скинами снова доступно!
+                <button class="notice-block__close"></button>
+              </div>
+              <div class="round-inform__bet">
+                <div class="round-inform__bet-loading">
+                  <span>Ожидание ставки</span>
+                </div>
+              </div>
+              <div class="round-inform__controls">
+                <div class="round-inform__controls-title">
+                  Информация:
+                </div>
+                <div class="round-inform__controls-count">
+                  <b class="count">0.00</b>
+                  <i class="fas fa-angle-double-right"></i>
+                  <b class="count">0.00</b>
+                </div>
+                <div class="round-inform__controls-form">
+                  <form class="controls-form" action="index.html" method="post">
+                    <input class="field-input" type="number" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="text" value="">
+                    <button class="controls-form__btn" type="button" name="button">
+                      Начать
+                      <b>0.00</b>
+                    </button>
+                  </form>
+                </div>
+                <div class="round-inform__controls-form">
+                  <span>
+                    Авто-вывод
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="round-stats">
+              <div class="round-stats__title">
+                Статистика раунда:
+              </div>
+              <ul class="round-stats__list">
+                <li class="round-stats__list-item">
+                  <img src="img/account.png" alt="#">
+                  <span>Участников:</span>
+                  <b>100</b>
+                </li>
+                <li class="round-stats__list-item">
+                  <img src="img/b.png" alt="#">
+                  <span>Участвует:</span>
+                  <b>100</b>
+                </li>
+              </ul>
+            </div>
+            <div class="round-list">
+              <ul>
+                <li class="noty-message noty-message__vk">
+                  Не пропустите последние новости и раздачи в нашей группе ВКонтакте.
+                </li>
+                <li class="noty-message noty-message__sale">
+                  Поставь в никнейм “csgo.run” и получи 10% к пополнению
+                </li>
+                <li class="round-item">
+                  <a href="#" class="round-item__photo">
+                    <img src="img/avatar.png" alt="avatar">
+                  </a>
+                  <ul class="round-item__cases">
+                    <li>
+                      <span>Anton Konov</span>
+                    </li>
+                  </ul>
+                  <div class="round-item__price">
+                    9.80
+                    <em>BIP</em>
+                  </div>
+                  <div class="status-label">
+                    Участвует
+                  </div>
+                  <div class="round-item__selected">
+                    <div class="round-item__selected-photo">
+                    </div>
+                    <div class="round-item__selected-price">
+                    </div>
+                  </div>
+                </li>
+                <li class="round-item round-item__green">
+                  <a href="#" class="round-item__photo">
+                    <img src="img/avatar.png" alt="avatar">
+                  </a>
+                  <ul class="round-item__cases">
+                    <li>
+                      <span>Anton Konov</span>
+                    </li>
+                  </ul>
+                  <div class="round-item__price">
+                    9.80
+                    <em>BIP</em>
+                  </div>
+                  <div class="status-label status-label__green">
+                    2.80x
+                  </div>
+                  <div class="round-item__selected">
+                    <div class="round-item__selected-photo">
+                      <img src="img/knife.png" alt="">
+                    </div>
+                    <div class="round-item__selected-price">
+                      146.51
+                      <em>BIP</em>
+                    </div>
+                  </div>
+                </li>
+                <li class="round-item round-item__red">
+                  <a href="#" class="round-item__photo">
+                    <img src="img/avatar.png" alt="avatar">
+                  </a>
+                  <ul class="round-item__cases">
+                    <li>
+                      <span>Anton Konov</span>
+                    </li>
+                  </ul>
+                  <div class="round-item__price">
+                    9.80
+                    <em>BIP</em>
+                  </div>
+                  <div class="status-label status-label__red">
+                    2.80x
+                  </div>
+                  <div class="round-item__selected">
+                    <div class="round-item__selected-photo">
+                      <img src="img/knife.png" alt="">
+                    </div>
+                    <div class="round-item__selected-price">
+                      146.51
+                      <em>BIP</em>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="links">
+              <a href="lang/agreementru.html" target="_blank">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
